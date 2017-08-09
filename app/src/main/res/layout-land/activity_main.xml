@@ -13,13 +13,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:orientation="vertical">
-    <TextView
-        android:text="Age Calculator"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -76,6 +71,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:padding="@dimen/activity_vertical_margin"
         android:background="#245">
 

@@ -98,16 +98,20 @@ public class MainActivity extends AppCompatActivity implements DatePickerFragmen
         ageCalculate.setTo(Integer.parseInt(today[0]),Integer.parseInt(today[1]),Integer.parseInt(today[2]));
 
         int[] age = ageCalculate.CalculateAge();
+
         if(age[0]==0 && age[1]==0 && age[2]==0) {
             Toast.makeText(this,"Incorrect date for calculation",Toast.LENGTH_SHORT).show();
+            days = "00";
+            months = "00";
+            years  = "00";
         }else {
             days = Integer.toString(age[0]);
             months = Integer.toString(age[1]);
             years = Integer.toString(age[2]);
-            yearsTextView.setText(years);
-            monthsTextView.setText(months);
-            daysTextView.setText(days);
         }
+        yearsTextView.setText(years);
+        monthsTextView.setText(months);
+        daysTextView.setText(days);
     }
 
     @Override
